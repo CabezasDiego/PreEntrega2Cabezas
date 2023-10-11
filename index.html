@@ -6,124 +6,217 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViverOnline</title>
     <link rel="shortcut icon" href="favicon.ico" type="x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
-    
+
 
 </head>
 
 <body>
     <header>
-        <!-- logo principal-->
-        <a href="#">
-            <img src="./multimedia/img/logo.jpg" alt="ViveroOnline">
-        </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">ViverOnline</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/consejos.html">Consejos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/sobre_nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="align-items-center">
+                <ul class="collapse navbar-collapse paddind-derecho">
+                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
+                    </li>
+                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
+                                alt="facebook-new--v1" /></a></li>
+                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
+                                alt="instagram-new--v1" /></a></li>
 
-        <!-- menú navegable-->
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/videos.html">VideoTutoriales</a></li>
-                <li><a href="../pages/consejos.html">Consejos</a></li>
-                <li><a href="./pages/sobre_nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+                </ul>
+
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h1>ViverOnline</h1>
-
-        <!-- La idea es tener un par de imagenes en carrousel, que sea un link a una pagina sobre el tema-->
-        <div class="container">
-
-            <a href="./pages/productos.html"><img src="./multimedia/img/carrousel/carrousel_productos.jpg" alt="productos" class="enBloque"></a>
-            <a href="./pages/videos.html"><img src="./multimedia/img/carrousel/carrousel_videotuto.jpg" alt="videoTutoriales" class="enBloque"></a>
-           <a href="./pages/servicios.html"><img src="./multimedia/img/carrousel/carrousel_servicios.jpg" alt="servicios" class="enBloque"></a>
-
-        </div>
-        <section>
-            <p>Te damos la bienvenida a ViveroOnline. Un espacio en el que queremos compartir contigo nuestra
+    <main class="container">
+        <!-- <section>
+            <p class="recuadro_texto">Te damos la bienvenida a ViveroOnline. Un espacio en el que queremos compartir contigo nuestra
                 experiencia y pasión por la naturaleza a través de consejos e ideas para disfrutar plenamente de tu
                 hogar, tus animales y tu jardín.</p>
-        </section>
-
+        </section> -->
         <!-- La idea es que cada sección sea un recuadro en donde haya 3 articulos en fila -->
         <div>
-            <section class="section_inicio">
+            <section class="rounded section_inicio">
                 <h2>Los últimos ingresos</h2>
-                <!-- cada imagen debe tener un link a la web sobre el tema -->
-                <article class="articulo_recuadro">
-                    <h3>Sansevieria</h3>
-                    <a href="./pages/p_sansevieria.html"><img src="./multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA" class="img_articulo"></a>
-                    <p>La sansevieria necesita muy poca agua y su llamativo color verde suma vitalidad a cualquier
-                        rincón. Además, ¡mejora el aire en tu casa!</p>
-                </article>
+                <div class="container row rounded container--articulo container--articulo--inicio">
+                    <!-- cada imagen debe tener un link a la web sobre el tema -->
+                    <article class="rounded col-md-4">
+                        <h4>Sansevieria</h4>
+                        <a href="./pages/productos/p_sansevieria.html"><img
+                                src="./multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA"
+                                class="img-thumbnail"></a>
+                        <p class="text">La sansevieria necesita muy poca agua y su llamativo color verde suma vitalidad a cualquier
+                            rincón. Además, ¡mejora el aire en tu casa!</p>
+                    </article>
 
-                <article class="articulo_recuadro">
-                    <h3>Pothus</h3>
-                    <a href="#"><img src="./multimedia/img/productos/POTHUS-1.jpg" alt="Pothus" class="img_articulo"></a>
-                    <p class="texto_articulo">Sin duda una de las plantas más populares de interior que no pueden faltar
-                        en tu espacio.</p>
-                </article>
+                    <article class="rounded col-md-4">
+                        <h4>Pothus</h4>
+                        <a href="#"><img src="./multimedia/img/productos/POTHUS-1.jpg" alt="Pothus"
+                                class="img-thumbnail"></a>
+                        <p class="text">Sin duda una de las plantas más populares de interior que no pueden faltar en tu espacio.</p>
+                    </article>
 
-                <article class="articulo_recuadro">
-                    <h3>Macetas Cónicas</h3>
-                    <a href="#"><img src="./multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas" class="img_articulo"></a>
-                    <p>Descubrí la variedad de macetas conicas que tenemos para vos!</p>
-                </article>
-            </section>
-            <!--En este caso en vez de videos serían imagenes del video que al hacer clic derive a la web que contenga ese video
-            falta sacar una imagen del video para reemplazar el mismo y sumarle el link a su web-->
-            <section class="section_inicio">
-                <h2>Video Tutoriales más vistos</h2>
-                <article class="articulo_recuadro">
-                    <h3>¿En dónde pongo a mis orquídeas?</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9aLopGyqhFE?si=dxhFzHLRzTgGblUX"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen class="img_articulo"> </iframe>
-                    <p>La orquídea es una planta subtropical y, por lo tanto, le gusta estar en un lugar iluminado...
-                    </p>
+                    <article class="rounded col-md-4">
+                        <h4>Macetas Cónicas</h4>
+                        <a href="#"><img src="./multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas"
+                                class="img-thumbnail"></a>
+                        <p class="text">Descubrí la variedad de macetas conicas que tenemos para vos!</p>
+                    </article>
 
-                </article>
 
-                <article class="articulo_recuadro">
-                    <h3>Cómo cuidar a nuestra Orquídea "Zapatito"</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1WJEtndcX_o?si=YkooC6aiSa5N_KV-"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen class="img_articulo"></iframe>
-                    <p>Zapatito de dama no requiere altos fertilizantes, es suficiente aplicar 3-5 fertilizantes durante
-                        la temporada de crecimiento (primavera y verano)</p>
-
-                </article>
-
-                <article class="articulo_recuadro">
-                    <h3>Cuidados Pothus</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6-LZBWUKLQk?si=QLKJtQFnTQ3kNsjT"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen class="img_articulo"></iframe>
-                    <p>El Pothus no es una planta particularmente exigente con los riegos</p>
-                </article>
-
+                </div>
             </section>
         </div>
+
+        <!--  imagenes en carrousel, que sea un link a una pagina sobre el tema-->
+        <div id="carouselExampleCaptions" class="carousel slide col-xl-8 centrado ">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./multimedia/img/carrousel/carrousel_productos.jpg" class="d-block w-100 rounded"
+                        alt="productos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Productos</h5>
+                        <p>Explora Nuestros Productos.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/img/carrousel/carrousel_videotuto.jpg" class="d-block w-100 rounded"
+                        alt="videoTurotiales">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Videos</h5>
+                        <p>Mira Nuestros Secretos de Jardinería en Acción.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./multimedia/img/carrousel/carrousel_servicios.jpg" class="d-block w-100 rounded"
+                        alt="servicios">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Servicios</h5>
+                        <p>Descubre Nuestros Cuidados Especializados.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--En este caso en vez de videos serían imagenes del video que al hacer clic derive a la web que contenga ese video
+            falta sacar una imagen del video para reemplazar el mismo y sumarle el link a su web-->
+        <div>
+            <section class="rounded section_inicio">
+                <h2>Video Tutoriales más vistos</h2>
+                <div class="container row rounded container--articulo container--articulo--inicio">
+
+                    <article class="rounded col-md-4">
+                        <h4>¿En dónde pongo a mis orquídeas?</h4>
+                        <a href="#"><img src="./multimedia/img/videoRecomendados/orquidea-1.jpg" alt="dondePongo"
+                                class="img-thumbnail"></a>
+                        
+                        <p class="text">La orquídea es una planta subtropical y, por lo tanto, le gusta estar en un lugar
+                            iluminado...
+                        </p>
+
+                    </article>
+
+                    <article class="rounded col-md-4">
+                        <h4>Cómo cuidar a nuestra Orquídea "Zapatito"</h4>
+                        <a href="#"><img src="./multimedia/img/videoRecomendados/orquidea-2.jpg" alt="dondePongo"
+                                class="img-thumbnail"></a>
+                        <!-- <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/1WJEtndcX_o?si=YkooC6aiSa5N_KV-"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe> -->
+                        <p class="text">Zapatito de dama no requiere altos fertilizantes, es suficiente aplicar 3-5 fertilizantes
+                            durante
+                            la temporada de crecimiento (primavera y verano)</p>
+
+                    </article>
+
+                    <article class="rounded col-md-4">
+                        <h4>Cuidados Pothus</h4>
+                        <a href="#"><img src="./multimedia/img/videoRecomendados/pothus-1.jpg" alt="dondePongo"
+                                class="img-thumbnail"></a>
+                        <!-- <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/6-LZBWUKLQk?si=QLKJtQFnTQ3kNsjT"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen class=""></iframe> -->
+                        <p class="text">El Pothus no es una planta particularmente exigente con los riegos</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+
+
 
 
 
     </main>
-    
-    <footer>
+
+    <footer class="row ">
         <!-- menú a pie con acceso a redes sociales-->
-        <nav>
+        <div class="col-xl-4"></div>
+        <nav class="col-xl-4">
             <ul>
                 <li><a href="#"><img width="48" height="48"
                             src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
@@ -138,11 +231,15 @@
 
             </ul>
         </nav>
-
-        <p>Todos los derechos reservados © 2023.</p>
+        <div class="col-xl-4">
+            <p>Todos los derechos reservados © 2023.</p>
+        </div>
+        
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

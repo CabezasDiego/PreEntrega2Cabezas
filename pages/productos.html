@@ -6,62 +6,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros Productos</title>
     <link rel="shortcut icon" href="../favicon.ico" type="x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!-- logo principal-->
-        <a href="../index.html">
-            <img src="../multimedia/img/logo.jpg" alt="ViveroOnline">
-        </a>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">ViverOnline</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/consejos.html">Consejos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sobre_nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="align-items-center">
+                <ul class="collapse navbar-collapse paddind-derecho">
+                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
+                    </li>
+                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
+                                alt="facebook-new--v1" /></a></li>
+                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
+                                alt="instagram-new--v1" /></a></li>
 
-        <!-- menú -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/videos.html">VideoTutoriales</a></li>
-                <li><a href="../pages/consejos.html">Consejos</a></li>
-                <li><a href="../pages/sobre_nosotros.html">Nosotros</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+                </ul>
+
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="section_inicio">
-            <h1>Nuestros productos</h1>
-            <h2>Contamos con amplia variedad de productos</h2>
-            <article class="articulo_principal">
-                <h3>Sansevieria</h3>
-                <a href="../pages/p_sansevieria.html"><img src="../multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA" class="img_articulo"></a>
-                <p>La sansevieria necesita muy poca agua y su llamativo color verde suma vitalidad a cualquier rincón.
-                    Además, ¡mejora el aire en tu casa!</p>
-            </article>
 
-            <article>
-                <h3>Pothus</h3>
-                <img src="../multimedia/img/productos/POTHUS-1.jpg" alt="Pothus" class="img_articulo">
-                <p class="texto_articulo">Sin duda una de las plantas más populares de interior que no pueden faltar en
-                    tu espacio.</p>
-            </article>
+    <main class="container">
+        <div>
+            <section class="rounded section_inicio">
+                <h2>Nuestros productos</h2>
+                <h5>Contamos con amplia variedad de productos</h5>
+                <div class="container row rounded container--articulo container--articulo--producto">
+                    
+                    
+                    <div class="row rounded container--articulo">
+                        <article class="rounded col-md-4">
+                            <h4>Sansevieria</h4>
+                            <a href="../pages/productos/p_sansevieria.html"><img
+                                    src="../multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA"
+                                    class="img-thumbnail"></a>
+                            <p>La sansevieria necesita muy poca agua y su llamativo color verde suma vitalidad a
+                                cualquier rincón.
+                                Además, ¡mejora el aire en tu casa!</p>
+                        </article>
 
-            <article>
-                <h3>Macetas Cónicas</h3>
-                <img src="../multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas" class="img_articulo">
-                <p>Descubrí la variedad de macetas conicas que tenemos para vos!</p>
-            </article>
+                        <article class="rounded col-md-4">
+                            <h4>Pothus</h4>
+                            <img src="../multimedia/img/productos/POTHUS-1.jpg" alt="Pothus" class="img-thumbnail">
+                            <p class="texto_articulo">Sin duda una de las plantas más populares de interior que no
+                                pueden faltar en
+                                tu espacio.</p>
+                        </article>
 
-        </section>
+                        <article class="rounded col-md-4">
+                            <h4>Macetas Cónicas</h4>
+                            <img src="../multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas"
+                                class="img-thumbnail">
+                            <p>Descubrí la variedad de macetas conicas que tenemos para vos!</p>
+                        </article>
+                    </div>
+                    
+                    <div class="row rounded container--articulo">
+                        <article class="rounded col-md-4">
+                            <h4>Sansevieria</h4>
+                            <a href="../pages/productos/p_sansevieria.html"><img
+                                    src="../multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA"
+                                    class="img-thumbnail"></a>
+                            <p>La sansevieria necesita muy poca agua y su llamativo color verde suma vitalidad a
+                                cualquier rincón.
+                                Además, ¡mejora el aire en tu casa!</p>
+                        </article>
+
+                        <article class="rounded col-md-4">
+                            <h4>Pothus</h4>
+                            <img src="../multimedia/img/productos/POTHUS-1.jpg" alt="Pothus" class="img-thumbnail">
+                            <p class="texto_articulo">Sin duda una de las plantas más populares de interior que no
+                                pueden faltar en
+                                tu espacio.</p>
+                        </article>
+
+                        <article class="rounded col-md-4">
+                            <h4>Macetas Cónicas</h4>
+                            <img src="../multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas"
+                                class="img-thumbnail">
+                            <p>Descubrí la variedad de macetas conicas que tenemos para vos!</p>
+                        </article>
+                    </div>
+
+                </div>
+            </section>
+        </div>
     </main>
-    
-    <footer>
+
+    <footer class="row ">
         <!-- menú a pie con acceso a redes sociales-->
-        <nav>
+        <div class="col-xl-4"></div>
+        <nav class="col-xl-4">
             <ul>
                 <li><a href="#"><img width="48" height="48"
                             src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
@@ -76,10 +154,14 @@
 
             </ul>
         </nav>
+        <div class="col-xl-4">
+            <p>Todos los derechos reservados © 2023.</p>
+        </div>
 
-        <p>Todos los derechos reservados © 2023.</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
