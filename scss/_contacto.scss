@@ -1,0 +1,21 @@
+.tituloContacto{
+    margin-top: 40px;
+    color: $colorFuenteTitulos;
+}
+
+.textoContacto{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 50px;
+    color: $colorFuenteParrafo;
+}
+.cuadro_contacto{
+    margin: 50px;
+    background-color: $colorFondoPrincipal;
+    padding: 30px;
+
+}
+
+.contenedor_flex{
+    display: flex;
+}

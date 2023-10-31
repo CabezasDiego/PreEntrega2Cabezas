@@ -1,0 +1,17 @@
+.contenedor_servicios {
+    h2 {
+        color: $colorFuenteTitulos;
+    }
+
+    .cuadro_servicios {
+        margin: 50px;
+        background-color: $colorFondoPrincipal;
+        padding: 30px;
+
+        p {
+            color: $colorFuenteParrafo;
+            text-align: justify;
+        }
+    }
+   
+}

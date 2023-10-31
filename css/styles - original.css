@@ -74,11 +74,6 @@ a {
 
 
 
-.section_contacto {
-    margin: 50px;
-    background-color: #F2E8CF;
-    padding: 30px;
-}
 
 .container--articulo {
     justify-content: center;
@@ -105,9 +100,7 @@ a {
     justify-content: center;
     align-items: center;
 }
-.text{
-    text-align:justify;
-}
+
 
 .imagen_central{
     opacity: 0.9;

@@ -1,0 +1,42 @@
+.tituloInicio {
+    margin-top: 20px;
+    color: $colorFuenteTitulos;
+}
+.subtituloInicio{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text_recuadro {
+    text-align: justify;
+}
+
+
+
+.container--articulo {
+    justify-content: center;
+    background-color: $colorFondoRecuadros;
+    padding: 10px;
+    width: auto;
+}
+
+.container--articulo--inicio {
+    margin: 20px 20px 60px;
+}
+
+.container--articulo--producto {
+    margin: 20px;
+}
+
+.centrado {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cuerpoPrincipal {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    padding: 15px;
+    background-color: $colorFondoPrincipal;
+}

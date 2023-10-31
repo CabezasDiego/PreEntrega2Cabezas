@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViverOnline</title>
+    <title>ViverOnline - Especialistas en Plantas y Jardinería</title>
     <link rel="shortcut icon" href="favicon.ico" type="x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css">
+
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Lato:wght@400;700&display=swap"
         rel="stylesheet">
+    <meta name="description"
+        content="Descubre una amplia variedad de plantas, árboles y accesorios para jardinería en nuestro vivero. Expertos en paisajismo y cuidado de plantas." />
+    <meta name="keywords" content="Vivero, Plantas, Jardinería, Flores, Árboles, Paisajismo, Cuidado de plantas" />
 
 
 </head>
@@ -21,7 +25,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">ViverOnline</a>
+                <a class="navbar-brand textoLogo" href="#">ViverOnline</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -43,9 +47,6 @@
                         <a class="nav-link" href="./pages/videos.html">Videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/consejos.html">Consejos</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="./pages/sobre_nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
@@ -60,10 +61,10 @@
                     </li>
                     <li class="nav-item"><a href="#"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
-                                alt="facebook-new--v1" /></a></li>
+                                alt="facebook" /></a></li>
                     <li class="nav-item"><a href="#"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
-                                alt="instagram-new--v1" /></a></li>
+                                alt="instagram" /></a></li>
 
                 </ul>
 
@@ -72,38 +73,36 @@
     </header>
 
     <main class="container">
-        <!-- <section>
-            <p class="recuadro_texto">Te damos la bienvenida a ViveroOnline. Un espacio en el que queremos compartir contigo nuestra
-                experiencia y pasión por la naturaleza a través de consejos e ideas para disfrutar plenamente de tu
-                hogar, tus animales y tu jardín.</p>
-        </section> -->
+
         <!-- La idea es que cada sección sea un recuadro en donde haya 3 articulos en fila -->
-        <div>
-            <section class="rounded section_inicio">
-                <h2>Los últimos ingresos</h2>
+        <div class="rounded cuerpoPrincipal">
+            <section>
+                <h2 class="tituloInicio">Los últimos ingresos</h2>
                 <div class="container row rounded container--articulo container--articulo--inicio">
                     <!-- cada imagen debe tener un link a la web sobre el tema -->
                     <article class="rounded col-md-4">
-                        <h4>Sansevieria</h4>
+                        <h3 class="subtituloInicio">Sansevieria</h3>
                         <a href="./pages/productos/p_sansevieria.html"><img
                                 src="./multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA"
                                 class="img-thumbnail"></a>
-                        <p class="text">La sansevieria necesita muy poca agua y su llamativo color verde suma vitalidad a cualquier
+                        <p class="text_recuadro">La sansevieria necesita muy poca agua y su llamativo color verde suma
+                            vitalidad a cualquier
                             rincón. Además, ¡mejora el aire en tu casa!</p>
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h4>Pothus</h4>
+                        <h3 class="subtituloInicio">Pothus</h3>
                         <a href="#"><img src="./multimedia/img/productos/POTHUS-1.jpg" alt="Pothus"
                                 class="img-thumbnail"></a>
-                        <p class="text">Sin duda una de las plantas más populares de interior que no pueden faltar en tu espacio.</p>
+                        <p class="text_recuadro">Sin duda una de las plantas más populares de interior que no pueden
+                            faltar en tu espacio.</p>
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h4>Macetas Cónicas</h4>
+                        <h3 class="subtituloInicio">Macetas Cónicas</h3>
                         <a href="#"><img src="./multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas"
                                 class="img-thumbnail"></a>
-                        <p class="text">Descubrí la variedad de macetas conicas que tenemos para vos!</p>
+                        <p class="text_recuadro">Descubrí la variedad de macetas conicas que tenemos para vos!</p>
                     </article>
 
 
@@ -161,46 +160,40 @@
         <!--En este caso en vez de videos serían imagenes del video que al hacer clic derive a la web que contenga ese video
             falta sacar una imagen del video para reemplazar el mismo y sumarle el link a su web-->
         <div>
-            <section class="rounded section_inicio">
-                <h2>Video Tutoriales más vistos</h2>
+            <section class="rounded cuerpoPrincipal">
+                <h2 class="tituloInicio">Video Tutoriales más vistos</h2>
                 <div class="container row rounded container--articulo container--articulo--inicio">
 
                     <article class="rounded col-md-4">
-                        <h4>¿En dónde pongo a mis orquídeas?</h4>
-                        <a href="#"><img src="./multimedia/img/videoRecomendados/orquidea-1.jpg" alt="dondePongo"
+                        <h3 class="subtituloInicio">¿En dónde pongo a mis orquídeas?</h3>
+                        <a href="./pages/videoTutoriales/vt_dondepongomisorguideas.html"><img
+                                src="./multimedia/img/videoRecomendados/orquidea-1.jpg" alt="dondePongo"
                                 class="img-thumbnail"></a>
-                        
-                        <p class="text">La orquídea es una planta subtropical y, por lo tanto, le gusta estar en un lugar
+
+                        <p class="text_recuadro">La orquídea es una planta subtropical y, por lo tanto, le gusta estar
+                            en un lugar
                             iluminado...
                         </p>
 
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h4>Cómo cuidar a nuestra Orquídea "Zapatito"</h4>
-                        <a href="#"><img src="./multimedia/img/videoRecomendados/orquidea-2.jpg" alt="dondePongo"
+                        <h3 class="subtituloInicio">Cómo cuidar a nuestra Orquídea "Zapatito"</h3>
+                        <a href="#"><img src="./multimedia/img/videoRecomendados/orquidea-2.jpg" alt="cuidadosOrguidea"
                                 class="img-thumbnail"></a>
-                        <!-- <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/1WJEtndcX_o?si=YkooC6aiSa5N_KV-"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe> -->
-                        <p class="text">Zapatito de dama no requiere altos fertilizantes, es suficiente aplicar 3-5 fertilizantes
+                        <p class="text_recuadro">Zapatito de dama no requiere altos fertilizantes, es suficiente aplicar
+                            3-5 fertilizantes
                             durante
                             la temporada de crecimiento (primavera y verano)</p>
 
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h4>Cuidados Pothus</h4>
-                        <a href="#"><img src="./multimedia/img/videoRecomendados/pothus-1.jpg" alt="dondePongo"
+                        <h3 class="subtituloInicio">Cuidados Pothus</h3>
+                        <a href="#"><img src="./multimedia/img/videoRecomendados/pothus-1.jpg" alt="cuidadosPohus"
                                 class="img-thumbnail"></a>
-                        <!-- <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/6-LZBWUKLQk?si=QLKJtQFnTQ3kNsjT"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen class=""></iframe> -->
-                        <p class="text">El Pothus no es una planta particularmente exigente con los riegos</p>
+
+                        <p class="text_recuadro">El Pothus no es una planta particularmente exigente con los riegos</p>
                     </article>
                 </div>
             </section>
@@ -231,10 +224,10 @@
 
             </ul>
         </nav>
-        <div class="col-xl-4">
+        <div class="col-xl-4 textoFooter">
             <p>Todos los derechos reservados © 2023.</p>
         </div>
-        
+
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
