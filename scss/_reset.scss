@@ -4,3 +4,23 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $colorFondoScroll;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:$colorScroll;
+    border-radius: 20px;
+  }
