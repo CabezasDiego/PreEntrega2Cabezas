@@ -1,15 +1,24 @@
-.tituloProductos{
-    margin-top: 20px;
-    color: $colorFuenteTitulos;
-}
+.contenedorProductos{
+    margin-bottom: 30px;
+    h2{
+        margin-top: 50px;
+        color: $colorFuenteTitulos;
+        margin-bottom: 30px;
+    }
 
-.textoProductos{
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 50px;
-    color: $colorFuenteParrafo;
-}
+    h5{
+        margin-top: 50px; 
+        color:$colorFuenteParrafo;
+    }
 
-.margenArriba{
-    margin-top: 10px;
+    p{
+        padding: 10px;
+        text-align: justify;
+        color:$colorFuenteParrafo;
+        
+    }
+    b{
+        color:$colorFuenteTitulos;
+    }
+
 }

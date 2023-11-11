@@ -1,27 +1,11 @@
 @import "variables";
 @import "reset";
 @import "mixing";
+@import "generales";
 @import "header";
-@import "inicio";
 @import "servicios";
+@import "productos";
 @import "contacto";
 @import "nosotros";
-@import "productos";
-@import "video";
+@import "videos";
 @import "footer";
-
-
-
-
-body {
-    background-color: $colorFondoBody;
-}
-
-
-
-
-.justificar_derecha{
-    justify-content: right;
-}
-
-

@@ -1,21 +1,24 @@
-.tituloContacto{
-    margin-top: 40px;
-    color: $colorFuenteTitulos;
+.contenedorContacto {
+    //Nos traemos la clase del scss generales
+    @extend .contenedor;
+    h2 {
+        margin-left: 30px;
+        margin-top: 20px;
+        color: $colorFuenteTitulos;
+    }
+   
+    p {
+        margin:1rem;
+        color: $colorFuenteParrafo;
+        text-align: justify;
+    }
+    b{
+        color: $colorFuenteTitulos;
+    }
 }
 
-.textoContacto{
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 50px;
-    color: $colorFuenteParrafo;
-}
-.cuadro_contacto{
-    margin: 50px;
-    background-color: $colorFondoPrincipal;
-    padding: 30px;
 
-}
-
-.contenedor_flex{
+.contenedorBotones{
     display: flex;
+    justify-content: right;    
 }

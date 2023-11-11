@@ -54,63 +54,64 @@
                     </li>
                 </ul>
             </div>
+            <!-- En los links se agrego target para que abra los mismos en una nueva pestaña, leí que se recomendaba colocar rel="noopener noreferrer" -->
             <div class="align-items-center">
                 <ul class="collapse navbar-collapse paddind-derecho">
-                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                    <li class="nav-item logoRRSS"><a href="https://twitter.com/" target="_blank"
+                            rel="noopener noreferrer"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
                     </li>
-                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                    <li class="nav-item logoRRSS"><a href="https://www.facebook.com/" target="_blank"
+                            rel="noopener noreferrer"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
                                 alt="facebook" /></a></li>
-                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                    <li class="nav-item logoRRSS"><a href="https://www.instagram.com/" target="_blank"
+                            rel="noopener noreferrer"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
                                 alt="instagram" /></a></li>
-
                 </ul>
-
             </div>
         </nav>
     </header>
 
     <main class="container">
 
-        <!-- La idea es que cada sección sea un recuadro en donde haya 3 articulos en fila -->
-        <div class="rounded cuerpoPrincipal">
+        <div class="rounded contenedorSeccion">
             <section>
-                <h2 class="tituloInicio">Los últimos ingresos</h2>
-                <div class="container row rounded container--articulo container--articulo--inicio">
-                    <!-- cada imagen debe tener un link a la web sobre el tema -->
+                <!-- Me recomendaron poner este titulo centrado, la verdad que me gusta más a la izquierda -->
+                <h2>Los últimos ingresos</h2>
+                <div class="row rounded contenedorArticulo text-center">
+                    <!-- Si se pusieron los siguientes titulos centrados -->
                     <article class="rounded col-md-4">
-                        <h3 class="subtituloInicio">Sansevieria</h3>
+                        <h3>Sansevieria</h3>
                         <a href="./pages/productos/p_sansevieria.html"><img
                                 src="./multimedia/img/productos/sansevieria-1.jpg" alt="SANSEVIERIA"
                                 class="img-thumbnail"></a>
-                        <p class="text_recuadro">La sansevieria necesita muy poca agua y su llamativo color verde suma
+                        <p>La sansevieria necesita muy poca agua y su llamativo color verde suma
                             vitalidad a cualquier
                             rincón. Además, ¡mejora el aire en tu casa!</p>
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h3 class="subtituloInicio">Pothus</h3>
+                        <h3>Pothus</h3>
                         <a href="#"><img src="./multimedia/img/productos/POTHUS-1.jpg" alt="Pothus"
                                 class="img-thumbnail"></a>
-                        <p class="text_recuadro">Sin duda una de las plantas más populares de interior que no pueden
+                        <p>Sin duda una de las plantas más populares de interior que no pueden
                             faltar en tu espacio.</p>
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h3 class="subtituloInicio">Macetas Cónicas</h3>
+                        <h3>Macetas Cónicas</h3>
                         <a href="#"><img src="./multimedia/img/productos/Macetas_conicas-1.jpg" alt="Macetas Cónicas"
                                 class="img-thumbnail"></a>
-                        <p class="text_recuadro">Descubrí la variedad de macetas conicas que tenemos para vos!</p>
+                        <p>Descubrí la variedad de macetas conicas que tenemos para vos!</p>
                     </article>
 
 
                 </div>
             </section>
         </div>
-
-        <!--  imagenes en carrousel, que sea un link a una pagina sobre el tema-->
+        <!-- Cada imagen del carrousen tiene un link a la sección correspondiente -->
         <div id="carouselExampleCaptions" class="carousel slide col-xl-8 centrado ">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -122,55 +123,58 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./multimedia/img/carrousel/carrousel_productos.jpg" class="d-block w-100 rounded"
-                        alt="productos">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Productos</h5>
-                        <p>Explora Nuestros Productos.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./multimedia/img/carrousel/carrousel_videotuto.jpg" class="d-block w-100 rounded"
-                        alt="videoTurotiales">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Videos</h5>
-                        <p>Mira Nuestros Secretos de Jardinería en Acción.</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="./multimedia/img/carrousel/carrousel_servicios.jpg" class="d-block w-100 rounded"
-                        alt="servicios">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Servicios</h5>
-                        <p>Descubre Nuestros Cuidados Especializados.</p>
-                    </div>
+                    <a href="./pages/productos.html"><img src="./multimedia/img/carrousel/carrousel_productos.jpg"
+                            class="d-block w-100 rounded" alt="productos">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3>Productos</h3>
+                            <h5>Explora Nuestros Productos.</h5>
+                    </a>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item">
+                <a href="./pages/videos.html"><img src="./multimedia/img/carrousel/carrousel_videotuto.jpg"
+                        class="d-block w-100 rounded" alt="videoTurotiales">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Videos</h3>
+                        <h5>Mira Nuestros Secretos de Jardinería en Acción.</h5>
+                </a>
+            </div>
         </div>
-        <!--En este caso en vez de videos serían imagenes del video que al hacer clic derive a la web que contenga ese video
-            falta sacar una imagen del video para reemplazar el mismo y sumarle el link a su web-->
+        <div class="carousel-item">
+            <a href="./pages/servicios.html"><img src="./multimedia/img/carrousel/carrousel_servicios.jpg"
+                    class="d-block w-100 rounded" alt="servicios">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Servicios</h3>
+                    <h5>Descubre Nuestros Cuidados Especializados.</h5>
+            </a>
+        </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+
         <div>
-            <section class="rounded cuerpoPrincipal">
-                <h2 class="tituloInicio">Video Tutoriales más vistos</h2>
-                <div class="container row rounded container--articulo container--articulo--inicio">
+            <section class="rounded contenedorSeccion">
+                <!-- En este caso tb se dejó a proposito el titulo a la izquierda -->
+                <h2>Video Tutoriales más vistos</h2>
+                <div class="container row rounded contenedorArticulo text-center">
 
                     <article class="rounded col-md-4">
-                        <h3 class="subtituloInicio">¿En dónde pongo a mis orquídeas?</h3>
+                        <h4>¿En dónde pongo a mis orquídeas?</h4>
                         <a href="./pages/videoTutoriales/vt_dondepongomisorguideas.html"><img
                                 src="./multimedia/img/videoRecomendados/orquidea-1.jpg" alt="dondePongo"
                                 class="img-thumbnail"></a>
 
-                        <p class="text_recuadro">La orquídea es una planta subtropical y, por lo tanto, le gusta estar
+                        <p>La orquídea es una planta subtropical y, por lo tanto, le gusta estar
                             en un lugar
                             iluminado...
                         </p>
@@ -178,10 +182,10 @@
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h3 class="subtituloInicio">Cómo cuidar a nuestra Orquídea "Zapatito"</h3>
+                        <h4>Cómo cuidar la Orquídea "Zapatito"</h4>
                         <a href="#"><img src="./multimedia/img/videoRecomendados/orquidea-2.jpg" alt="cuidadosOrguidea"
                                 class="img-thumbnail"></a>
-                        <p class="text_recuadro">Zapatito de dama no requiere altos fertilizantes, es suficiente aplicar
+                        <p>Zapatito de dama no requiere altos fertilizantes, es suficiente aplicar
                             3-5 fertilizantes
                             durante
                             la temporada de crecimiento (primavera y verano)</p>
@@ -189,11 +193,11 @@
                     </article>
 
                     <article class="rounded col-md-4">
-                        <h3 class="subtituloInicio">Cuidados Pothus</h3>
+                        <h4>Cuidados Pothus</h4>
                         <a href="#"><img src="./multimedia/img/videoRecomendados/pothus-1.jpg" alt="cuidadosPohus"
                                 class="img-thumbnail"></a>
 
-                        <p class="text_recuadro">El Pothus no es una planta particularmente exigente con los riegos</p>
+                        <p>El Pothus no es una planta particularmente exigente con los riegos</p>
                     </article>
                 </div>
             </section>
@@ -206,26 +210,28 @@
 
     </main>
 
-    <footer class="row ">
+    <footer>
         <!-- menú a pie con acceso a redes sociales-->
-        <div class="col-xl-4"></div>
-        <nav class="col-xl-4">
-            <ul>
-                <li><a href="#"><img width="48" height="48"
-                            src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
-                </li>
-                <li><a href="#"><img width="48" height="48"
-                            src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
-                            alt="facebook-new--v1" /></a></li>
-                <!-- <li><a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/facebook.png" alt="facebook"/></a></li> -->
-                <li><a href="#"><img width="48" height="48"
-                            src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
-                            alt="instagram-new--v1" /></a></li>
+        <div class="row">
 
-            </ul>
-        </nav>
-        <div class="col-xl-4 textoFooter">
-            <p>Todos los derechos reservados © 2023.</p>
+            <nav class="col-xl-4 align-self-center">
+                <ul>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img width="48"
+                                height="48" src="https://img.icons8.com/fluency-systems-regular/48/twitter.png"
+                                alt="twitter" /></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img width="48"
+                                height="48" src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
+                                alt="facebook-new--v1" /></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img width="48"
+                                height="48"
+                                src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
+                                alt="instagram-new--v1" /></a>
+                    </li>
+
+                </ul>
+            </nav>
         </div>
 
     </footer>

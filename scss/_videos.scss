@@ -1,0 +1,8 @@
+.contenedorVideos {
+    @extend .contenedor;
+
+    h2 {
+        margin: 20px;
+        color: $colorFuenteTitulos;
+    }
+}

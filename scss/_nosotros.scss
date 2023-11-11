@@ -1,14 +1,23 @@
-.tituloNosotros{
-    margin-top: 40px;
-    color: $colorFuenteTitulos;
+.contenedorNosotros {
+    //Nos traemos la clase del scss generales
+    @extend .contenedor;
+
+    h2 {
+        margin-top: 20px;
+        margin-left: 20px;
+        color: $colorFuenteTitulos;
+        margin-bottom: 40px;
+    }
+    p{
+        text-align: justify;
+        color:$colorFuenteParrafo;
+        padding: 5px 60px;
+    }
+    b{
+        color: $colorFuenteTitulos;
+    }
 }
 
-.textoNosotros{
-    margin-top: 0;
-    margin-bottom: 1rem;
-    margin-left: 50px;
-    color: $colorFuenteParrafo;
-}
 .imagenNosotros{
     display: flex;
     justify-content: center;

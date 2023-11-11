@@ -1,0 +1,87 @@
+body {
+    background-color: $colorFondoBody;
+    //Probe con margin-right para eliminar el scroll lateral de boorstrap pero no me funcionó, busque y recomendaban usar overflow-x
+    //margin-right: 0px;
+    overflow-x: hidden;
+   
+    a{
+        text-decoration: none;
+    }
+}
+
+.contenedor{
+    margin-bottom: 50px;
+    margin-top: 60px;
+    padding: 15px;
+    background-color: $colorFondoSeccion;
+
+}
+
+.contenedorSeccion {
+    @extend .contenedor;
+    h2 {
+        margin-top: 20px;
+        color: $colorFuenteTitulos;
+    }
+}
+
+.contenedorArticulo{
+    justify-content: center;
+    background-color: $colorFondoRecuadros;
+    padding: 10px;
+    width: auto;
+    margin: 20px 20px 60px;
+    h3{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $colorFuenteSubtitulos;
+    }
+    h4{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: $colorFuenteSubtitulos;
+    }
+    p{
+        text-align: justify;
+        color:$colorFuenteParrafo;
+    }
+
+}
+
+.centrado {
+    margin-left: auto;
+    margin-right: auto;
+    h3{
+        color:white;
+    }
+    h5{
+        color:white;
+    }
+}
+
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: $colorFondoScroll;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:$colorScroll;
+    border-radius: 20px;
+  }
+
+
+
+

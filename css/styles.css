@@ -16,6 +16,7 @@
   padding: 0.8em 1.2em;
   cursor: pointer;
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.06);
+  margin: 8px;
 }
 
 .botonCancelar {
@@ -29,12 +30,87 @@
   padding: 0.8em 1.2em;
   cursor: pointer;
   box-shadow: 0 5px 5px 0px rgba(0, 0, 0, 0.06);
+  margin: 8px;
+}
+
+body {
+  background-color: #A1C7D8;
+  overflow-x: hidden;
+}
+body a {
+  text-decoration: none;
+}
+
+.contenedor, .contenedorVideos, .contenedorNosotros, .contenedorContacto, .contenedorSeccion, .contenedorServicios {
+  margin-bottom: 50px;
+  margin-top: 60px;
+  padding: 15px;
+  background-color: #f2e8cf;
+}
+
+.contenedorSeccion h2, .contenedorServicios h2 {
+  margin-top: 20px;
+  color: #176B87;
+}
+
+.contenedorArticulo {
+  justify-content: center;
+  background-color: #78A596;
+  padding: 10px;
+  width: auto;
+  margin: 20px 20px 60px;
+}
+.contenedorArticulo h3 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1f3238;
+}
+.contenedorArticulo h4 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #1f3238;
+}
+.contenedorArticulo p {
+  text-align: justify;
+  color: #0f181b;
+}
+
+.centrado {
+  margin-left: auto;
+  margin-right: auto;
+}
+.centrado h3 {
+  color: white;
+}
+.centrado h5 {
+  color: white;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: blue orange;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #f2e8cf;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #78A596;
+  border-radius: 20px;
 }
 
 header {
   padding: 20px;
   background-color: #f2e8cf;
-  margin-right: -0.75rem;
 }
 header li {
   display: inline-block;
@@ -47,96 +123,90 @@ header li:hover {
 
 .textoLogo {
   font-size: 2.2rem;
-  color: #176B87;
+  color: #05668d;
+}
+.textoLogo:hover {
+  color: #B84A62;
 }
 
-.tituloInicio {
+.logoRRSS {
+  margin: 5px;
+}
+
+.contenedorServicios h3 {
   margin-top: 20px;
   color: #176B87;
 }
-
-.subtituloInicio {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.text_recuadro {
+.contenedorServicios p {
   text-align: justify;
+  color: #0f181b;
+}
+.contenedorServicios b {
+  color: #176B87;
+}
+.contenedorServicios li b {
+  color: #1f3238;
+}
+.contenedorServicios img {
+  width: 100vw;
+}
+.contenedorServicios .contenedorBanner {
+  margin: 60px 0;
 }
 
-.container--articulo {
-  justify-content: center;
-  background-color: #78A596;
+.contenedorProductos {
+  margin-bottom: 30px;
+}
+.contenedorProductos h2 {
+  margin-top: 50px;
+  color: #176B87;
+  margin-bottom: 30px;
+}
+.contenedorProductos h5 {
+  margin-top: 50px;
+  color: #0f181b;
+}
+.contenedorProductos p {
   padding: 10px;
-  width: auto;
+  text-align: justify;
+  color: #0f181b;
 }
-
-.container--articulo--inicio {
-  margin: 20px 20px 60px;
-}
-
-.container--articulo--producto {
-  margin: 20px;
-}
-
-.centrado {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cuerpoPrincipal {
-  margin-bottom: 60px;
-  margin-top: 60px;
-  padding: 15px;
-  background-color: #f2e8cf;
-}
-
-.contenedor_servicios h2 {
+.contenedorProductos b {
   color: #176B87;
 }
-.contenedor_servicios .cuadro_servicios {
-  margin: 50px;
-  background-color: #f2e8cf;
-  padding: 30px;
+
+.contenedorContacto h2 {
+  margin-left: 30px;
+  margin-top: 20px;
+  color: #176B87;
 }
-.contenedor_servicios .cuadro_servicios p {
-  color: #272725;
+.contenedorContacto p {
+  margin: 1rem;
+  color: #0f181b;
   text-align: justify;
 }
-
-.tituloContacto {
-  margin-top: 40px;
+.contenedorContacto b {
   color: #176B87;
 }
 
-.textoContacto {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 50px;
-  color: #272725;
-}
-
-.cuadro_contacto {
-  margin: 50px;
-  background-color: #f2e8cf;
-  padding: 30px;
-}
-
-.contenedor_flex {
+.contenedorBotones {
   display: flex;
+  justify-content: right;
 }
 
-.tituloNosotros {
-  margin-top: 40px;
+.contenedorNosotros h2 {
+  margin-top: 20px;
+  margin-left: 20px;
   color: #176B87;
+  margin-bottom: 40px;
 }
-
-.textoNosotros {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 50px;
-  color: #272725;
+.contenedorNosotros p {
+  text-align: justify;
+  color: #0f181b;
+  padding: 5px 60px;
+}
+.contenedorNosotros b {
+  color: #176B87;
 }
 
 .imagenNosotros {
@@ -146,38 +216,9 @@ header li:hover {
   margin: 50px;
 }
 
-.tituloProductos {
-  margin-top: 20px;
+.contenedorVideos h2 {
+  margin: 20px;
   color: #176B87;
-}
-
-.textoProductos {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 50px;
-  color: #272725;
-}
-
-.margenArriba {
-  margin-top: 10px;
-}
-
-.tituloVideos {
-  margin-top: 20px;
-  color: #176B87;
-}
-
-.subtituloVideos {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.textoVideos {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  margin-left: 50px;
-  color: #272725;
 }
 
 footer {
@@ -211,20 +252,12 @@ footer div {
   display: flex;
 }
 footer div p {
-  color: #272725;
+  color: #0f181b;
   text-align: end;
   margin: 0;
 }
 footer .textoFooter {
   padding: 5px;
-}
-
-body {
-  background-color: #A1C7D8;
-}
-
-.justificar_derecha {
-  justify-content: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

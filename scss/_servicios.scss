@@ -1,17 +1,33 @@
-.contenedor_servicios {
-    h2 {
+.contenedorServicios {
+    //Nos traemos la clase del scss generales
+    @extend .contenedorSeccion;
+
+    h3 {
+        margin-top: 20px;
         color: $colorFuenteTitulos;
     }
 
-    .cuadro_servicios {
-        margin: 50px;
-        background-color: $colorFondoPrincipal;
-        padding: 30px;
+    p {
+        text-align: justify;
+        color: $colorFuenteParrafo;
 
-        p {
-            color: $colorFuenteParrafo;
-            text-align: justify;
+    }
+    b {
+        color: $colorFuenteTitulos;
+    }
+
+    li {
+        b {
+            color: $colorFuenteSubtitulos;
         }
     }
-   
+
+    img {
+        width: 100vw;
+
+    }
+
+    .contenedorBanner {
+        margin: 60px 0;
+    }
 }

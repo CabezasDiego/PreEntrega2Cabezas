@@ -56,90 +56,95 @@
             </div>
             <div class="align-items-center">
                 <ul class="collapse navbar-collapse paddind-derecho">
-                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                    <li class="nav-item logoRRSS"><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
                     </li>
-                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                    <li class="nav-item logoRRSS"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
-                                alt="facebook-new--v1" /></a></li>
-                    <li class="nav-item"><a href="#"><img width="30" height="30"
+                                alt="facebook" /></a></li>
+                    <li class="nav-item logoRRSS"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img width="30" height="30"
                                 src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
-                                alt="instagram-new--v1" /></a></li>
-
+                                alt="instagram" /></a></li>
                 </ul>
-
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="container">
+        <div class="container rounded contenedorContacto">
+<!-- el título está a la ezquierda para seguir el diseño -->
+            <h2>¡Nos encantaría estar en contacto contigo!</h2>
 
-            <h2 class="tituloContacto">Escribinos!</h2>
-
-            <div class="textoContacto row">
-                <p class="col-11">¡Nos encantaría estar en contacto contigo! En nuestro vivero, no solo nos dedicamos a
-                    ofrecer una
-                    amplia gama de productos para embellecer tu hogar con plantas y accesorios, sino que también nos
-                    apasiona brindar orientación y consejos a través de nuestros videos. ¿Tienes alguna pregunta sobre
-                    nuestras plantas, necesitas asesoramiento sobre jardinería o simplemente quieres compartir tus
-                    experiencias con nosotros? No dudes en ponerte en contacto a través de nuestro correo electrónico,
-                    teléfono o redes sociales. Estamos aquí para ayudarte a cultivar espacios verdes y hermosos.
-                    ¡Esperamos saber de ti pronto!</p>
+            <div class="row justify-content-center">
+                <div class="col-xl-10 col-md-10 col-sm-11 ">
+                    <p> En <b>ViverOnline</b>,
+                        no solo nos dedicamos a
+                        ofrecer una
+                        amplia gama de productos para embellecer tu hogar con plantas y accesorios, sino que también nos
+                        apasiona brindar orientación y consejos a través de nuestros videos. </p>
+                    <p>¿Tienes alguna pregunta sobre
+                        nuestras plantas, necesitas asesoramiento sobre jardinería o simplemente quieres compartir tus
+                        experiencias con nosotros? No dudes en ponerte en contacto a través de nuestro correo
+                        electrónico,
+                        teléfono o redes sociales. Estamos aquí para ayudarte a cultivar espacios verdes y hermosos.
+                        ¡Esperamos saber de ti pronto!</p>
+                </div>
             </div>
-            <div class="cuadro_contacto rounded">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-md-10 col-sm-11">
+                    <form action="#">
+                        <div class="mb-3 mt-3">
 
-                <form action="alguna.html">
-                    <div class="mb-3 mt-3">
+                            <div>
+                                <label for="nombre">Nombre</label>
+                                <input class="form-control" id="nombre" name="nombre" type="text"
+                                    placeholder="Ingresa tu nombre" minlength="5" maxlength="50" required>
+                            </div>
+                            <div>
+                                <label for="email">Email</label>
+                                <input class="form-control" id="email" name="email" type="email"
+                                    placeholder="Ingresa tu email" minlenght="10" maxlength="50" required>
+                            </div>
+                            <div>
+                                <label for="nombre">Dejanos tu comentario</label>
+                                <textarea name="comentario" id="comentario" rows="10" class="form-control"></textarea>
+                            </div>
 
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input class="form-control" id="nombre" name="nombre" type="text"
-                                placeholder="Ingresa tu nombre" minlength="5" maxlength="50" required>
                         </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input class="form-control" id="email" name="email" type="email"
-                                placeholder="Ingresa tu email" minlenght="10" maxlength="50" required>
-                        </div>
-                        <div>
-                            <label for="nombre">Dejanos tu comentario</label>
-                            <textarea name="comentario" id="comentario" rows="10" class="form-control"></textarea>
-                        </div>
-
-                    </div>
-                    <div class="contenedor_flex justificar_derecha">
-                        <button type="submit" class="botonAceptar ">Enviar</button>
-
-                        <button type="cancel" class="botonCancelar ">Cancelar</button>
-                    </div>
-
+                </div>
+                <div class="contenedorBotones justificar_derecha">
+                    <button type="submit" class="botonAceptar ">Enviar</button>
+<!-- acá si se oprime cancelar y todo está vacío pide ingresar datos.
+No supe cambiar ese comportamiento-->
+                    <button type="cancel" class="botonCancelar ">Cancelar</button>
+                </div>
                 </form>
+                
+
             </div>
         </div>
 
     </main>
 
-    <footer class="row">
+    <footer>
         <!-- menú a pie con acceso a redes sociales-->
-        <div class="col-xl-4"></div>
-        <nav class="col-xl-4">
-            <ul>
-                <li><a href="#"><img width="48" height="48"
-                            src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
-                </li>
-                <li><a href="#"><img width="48" height="48"
-                            src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
-                            alt="facebook-new--v1" /></a></li>
-                <!-- <li><a href="#"><img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/facebook.png" alt="facebook"/></a></li> -->
-                <li><a href="#"><img width="48" height="48"
-                            src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
-                            alt="instagram-new--v1" /></a></li>
+        <div class="row">
 
-            </ul>
-        </nav>
-        <div class="col-xl-4">
-            <p>Todos los derechos reservados © 2023.</p>
+            <nav class="col-xl-4 align-self-center">
+                <ul>
+                    <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><img width="48" height="48"
+                                src="https://img.icons8.com/fluency-systems-regular/48/twitter.png" alt="twitter" /></a>
+                    </li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img width="48"
+                                height="48" src="https://img.icons8.com/fluency-systems-regular/48/facebook-new--v1.png"
+                                alt="facebook-new--v1" /></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img width="48"
+                                height="48" src="https://img.icons8.com/fluency-systems-regular/48/instagram-new--v1.png"
+                                alt="instagram-new--v1" /></a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
     </footer>

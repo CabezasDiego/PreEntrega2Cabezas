@@ -1,11 +1,11 @@
 header {
     padding: 20px;
-    background-color:$colorFondoPrincipal;
+    background-color:$colorFondoHeader;
     //En footer, al usar .row traía margin-right: calc(-0.5 * var(--bs-gutter-x));
     //esto hacía que el header tuviera una franja a la izquierda por más que en el footer
     //se pusiera margin-right:0;
     //se extrajo parte del código de .row para igualar al footer.
-    margin-right: calc(-0.5 * 1.5rem);
+    //margin-right: calc(-0.5 * 1.5rem);
 
     li {
         display: inline-block;
@@ -21,5 +21,12 @@ header {
 
 .textoLogo{
     font-size: 2.2rem;
-    color: $colorFuenteTitulos;
+    color: $colorFuenteLogo;
+    &:hover{
+        color: $colorFuenteLogoHover;
+    }
+}
+
+.logoRRSS{
+    margin: 5px;
 }
